@@ -52,8 +52,8 @@
     <section class="gallery">
       <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       <ul class="gallery__list">
-        <li class="gallery__list-item">
-          <a href="#" class="gallery__list-link gallery__list-link--panorama">
+        <li class="gallery__list-item  gallery__list-item--panorama">
+          <a href="#" class="gallery__list-link">
             <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Вид сверху на лес"></a>
           <p class="gallery__list-user">Анна<span class="gallery__list-time">(5 минут назад)</span></p>
           <p class="gallery__list-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -166,22 +166,22 @@
               <button class="tools__button-fill">
                 <img src="https://via.placeholder.com/48x43" width="48" height="43" alt="Кнопка заливки">
               </button>
-              <button class="tools__button-crop tools__button-crop--active">
+              <button class="tools__button-contrast">
                 <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Кнопка контрастности">
               </button>
             </div>
             <div class="tools__sliders">
-              <div class="tools__slider tools__slider--active crop-slider">
+              <div class="tools__slider tools__slider--active tools__crop">
                 <div class="tools__scale"></div>
                 <div class="tools__toggle crop-slider__toggle"></div>
                 <input type="hidden" id="toggle-crop" name="toggle-crop" value="25">
               </div>
-              <div class="tools__slider fill-slider">
+              <div class="tools__slider tools__fill">
                 <div class="tools__scale"></div>
                 <div class="tools__toggle fill-slider__toggle"></div>
                 <input type="hidden" id="toggle-fill" name="toggle-fill" value="10">
               </div>
-              <div class="tools__slider contrast-slider">
+              <div class="tools__slider tools__contrast">
                 <div class="tools__scale"></div>
                 <div class="tools__toggle contrast-slider__toggle"></div>
                 <input type="hidden" id="toggle-contrast" name="toggle-contrast" value="30">
