@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  align-items: center;
+
+
+  &__text {
+    margin-right: 15px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283645;
+  }
+}

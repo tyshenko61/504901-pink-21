@@ -1,0 +1,51 @@
+.promo {
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/back-mobile.png");
+    background-size: 100%;
+    background-position: 0 -59px;
+    background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    // outline-offset: -5px;
+  }
+
+  &__slogan {
+    background-color: transparent;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 25px auto 27px auto;
+    box-sizing: border-box;
+    width: 280px;
+  }
+
+  &__header {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/phone.png"), url(../img/screen.png);
+    background-position: top left, 105px 32px;
+    background-repeat: no-repeat, no-repeat;
+    overflow: hidden;
+  }
+
+
+}

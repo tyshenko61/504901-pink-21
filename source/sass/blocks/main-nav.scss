@@ -1,0 +1,27 @@
+.main-nav {
+    // outline: 5px solid rgba(255, 0, 0, 0.8);;
+    // outline-offset: -3px;
+    //position: relative;
+    width: auto;
+    min-height: 70px;
+    background-color: #283645;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & a {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      // &__wrapper {
+      //   display: none;
+      // }
+    }
+  }

@@ -1,0 +1,25 @@
+.page-header {
+    min-width: 320px;
+    min-height: 69px;
+    background-color: $header-background;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 69px;
+    background-color: grey;
+    cursor: pointer;
+    border: none;
+  }
+}
