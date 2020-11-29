@@ -1,5 +1,5 @@
 .promo-application {
-  background-color: #1D2631;
+  background-color: #1d2631;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,14 +33,12 @@
   }
 
   &__description {
-    font-family: Open Sans;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 280px;
     margin: 15px auto 30px auto;
-
   }
 }

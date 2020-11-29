@@ -25,7 +25,6 @@
 
   &__contacts-item {
     display: flex;
-    // align-items: center;
     flex-direction: column;
     margin-bottom: 18px;
     padding: 0;
@@ -46,7 +45,7 @@
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    color: #D22856;
+    color: #d22856;
     margin-top: 0;
     padding: 0;
     text-decoration: none;
@@ -57,15 +56,8 @@
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    color: #D22856;
+    color: #d22856;
     padding: 0;
     margin: 0;
   }
-
-  // &__wrapper {
-  //   background-image: url("../img/triangle_white_footer.png");
-  //   background-position: bottom left;
-  //   background-color: grey;
-  //   background-repeat: no-repeat;
-  // }
 }
