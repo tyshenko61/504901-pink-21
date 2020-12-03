@@ -1,25 +1,29 @@
 .page-header {
-  min-width: 320px;
-  min-height: 69px;
   background-color: $header-background;
   color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   position: relative;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-color: grey;
+  cursor: pointer;
+  border: none;
   margin: 0;
   padding: 0;
+}
 
-  &__toggle {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    z-index: 2;
-    display: block;
-    width: 70px;
-    height: 69px;
-    background-color: grey;
-    cursor: pointer;
-    border: none;
-  }
+.page-header__menu-logo {
+  padding: 23px 20px 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background: #283645;
+  box-shadow: 0 1px 0 #000000;
 }
