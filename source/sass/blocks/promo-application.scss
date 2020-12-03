@@ -1,0 +1,41 @@
+.promo-application {
+  background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.promo-application__download {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 29px;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 15px 0;
+  margin: 30px auto 32px auto;
+}
+
+.promo-application__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 204px;
+}
+
+.promo-application__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  width: 280px;
+  margin: 15px auto 30px auto;
+}

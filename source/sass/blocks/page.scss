@@ -1,0 +1,40 @@
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $dark-grey;
+  background-color: $page-background;
+}
+
+.page__header {
+  background-color: $header-background;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.page__main {
+  overflow-x: hidden;
+}
+
+.page__footer {
+  padding-top: 30px;
+}
+
+.page__copyright {
+  margin-top: 25px;
+}
+
+.page__social {
+  margin-top: 35px;
+}
