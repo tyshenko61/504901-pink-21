@@ -1,0 +1,35 @@
+.applications__item {
+  margin-top: 34px;
+  margin-left: -5px;
+}
+
+.applications__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 42px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    left: -70px;
+    top: -8px;
+  }
+}
+
+.applications__radio {
+  &:checked + .applications__label::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d22856;
+    left: -57px;
+    top: 5px;
+  }
+}
