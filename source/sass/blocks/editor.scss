@@ -1,9 +1,12 @@
 .editor {
   background-color: #f2f2f2;
-  margin-bottom: 10px;
 }
 
 .editor__wrapper {
+  margin-bottom: 10px;
+}
+
+.editor__photo-wrapper {
   padding: 20px 20px;
 }
 
@@ -39,6 +42,11 @@
   border: 4px solid #d22856;
   box-sizing: border-box;
   border-radius: 30px;
+
+  &--enabled {
+    color: rgba(40, 54, 69, 0.1);
+    border: 4px solid rgba(40, 54, 69, 0.1);
+  }
 }
 
 .editor__button-post {
@@ -47,9 +55,4 @@
 
 .editor__button-cancel {
   margin-bottom: 38px;
-}
-
-.editor__button--enabled {
-  color: rgba(40, 54, 69, 0.1);
-  border: 4px solid rgba(40, 54, 69, 0.1);
 }
