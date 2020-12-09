@@ -25,10 +25,10 @@
 .tools__slider {
   position: relative;
   display: block;
-}
 
-.tools__slider--hidden {
-  display: none;
+  &--hidden {
+    display: none;
+  }
 }
 
 .tools__toggle {
