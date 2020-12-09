@@ -1,0 +1,44 @@
+.tools__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 62px;
+}
+
+.tools__button {
+  border: 0;
+}
+
+.tools__scale {
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+}
+
+.tools__sliders {
+  margin-top: 33px;
+  margin-bottom: 34px;
+  padding: 0 40px;
+}
+
+.tools__slider {
+  position: relative;
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.tools__toggle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 193px;
+  top: -5px;
+  background: #ffffff;
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
