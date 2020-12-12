@@ -17,13 +17,55 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 43px;
+    right: 20px;
+  }
 }
 
 .page-header__menu-logo {
-  padding: 23px 20px 18px 20px;
+  padding: 22px 20px 24px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   background: #283645;
   box-shadow: 0 1px 0 #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 20px 42px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
 }
+
+.page-header__menu-logo-image {
+  display: none;
+  fill: #ffffff;
+
+  &--mobile {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+// .page-header__menu-logo-link {
+//   margin-top: 10px;
+// }

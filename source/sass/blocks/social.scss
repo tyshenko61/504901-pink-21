@@ -3,10 +3,17 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-items: center;
+  flex-wrap: wrap;
+  width: 176px;
+  // justify-content: space-between;
 }
 
 .social__item {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

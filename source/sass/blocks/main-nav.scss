@@ -1,7 +1,14 @@
 .main-nav__wrapper {
-  width: auto;
-  min-height: 70px;
-  background-color: #283645;
+    width: auto;
+    min-height: 70px;
+    background-color: #283645;
+
+  //   @media (min-width: $desktop-width) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  //   background-color: transparent;
+  // }
 }
 
 .main-nav__list {

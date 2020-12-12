@@ -3,7 +3,12 @@
   background-size: 100%;
   background-position: 0 -59px;
   background-repeat: no-repeat;
-}
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.png");
+    background-size: 100%;
+   }
+ }
 
 .promo__wrapper {
   display: flex;
@@ -25,23 +30,96 @@
   margin: 25px auto 27px auto;
   box-sizing: border-box;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 120%;
+    margin-left: 20px;
+    margin-top: 93px;
+    width: 300px;
+  }
 }
 
 .promo__header {
   padding: 0;
   margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    top: 110px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/phone-tablet.png");
+      top: 72px;
+      left: 0;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   width: 1050px;
+    //   height: 645px;
+    //   background-size: cover;
+    //   top: -2px;
+    //   left: 199px;
+    // }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 111px;
+    height: 197px;
+    background-image: url("../img/screen.png");
+    background-size: cover;
+    left: 104px;
+    top: 142px;
+
+    @media (min-width: $tablet-width) {
+      width: 195px;
+      height: 346px;
+      background-image: url("../img/screen-tablet.png");
+      left: 372px;
+      top: 125px;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   width: 230px;
+    //   height: 408px;
+    //   top: 63px;
+    //   left: 596px;
+    // }
+  }
 }
 
-.promo__image {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  height: 286px;
-  background-image: url("../img/phone.png"), url("../img/screen.png");
-  background-position: top left, 105px 32px;
-  background-repeat: no-repeat, no-repeat;
-  overflow: hidden;
-}
+// .promo__image {
+//   margin: 0;
+//   padding: 0;
+//   width: 320px;
+//   height: 286px;
+//   background-image: url("../img/phone.png"), url("../img/screen.png");
+//   background-position: top left, 105px 32px;
+//   background-repeat: no-repeat, no-repeat;
+//   overflow: hidden;
+
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     left: 0;
+//     top: 72px;
+//     width: 660px;
+//     height: 545px;
+//     background-image: url("../img/phone-tablet.png"), url("../img/screen-tablet.png");
+//     background-position: 0 0, 372px 55px;
+//   }
+// }
+
 
 .promo__caption {
   margin: 0 20px;
@@ -55,4 +133,13 @@
 
 .promo__catalog-caption {
   padding: 26px 20px 79px 20px;
+}
+
+.promo__application {
+  padding: 290px 20px 0 20px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 0 20px;
+  }
 }
