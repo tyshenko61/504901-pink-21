@@ -4,6 +4,16 @@
   @media (min-width: $tablet-width) {
     margin: 67px auto 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 920px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .reviews__item {
@@ -11,6 +21,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 
 .reviews__author {
@@ -25,6 +36,11 @@
   @media (min-width: $tablet-width) {
     font-weight: bold;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-top: 36px;
   }
 }
 
@@ -43,6 +59,25 @@
     font-size: 18px;
     margin-bottom: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 700px;
+    margin: 118px auto 0;
+
+    &::before {
+      position: absolute;
+      top: -113px;
+      left: 331px;
+      content: "";
+      display: block;
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 .reviews__author-info {
@@ -57,14 +92,69 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-top: 3px;
+  }
 }
 
-.reviews__prev {
+.reviews__arrow {
   display: none;
-}
 
-.reviews__next {
-  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 45px;
+    background-color: transparent;
+    top: 145px;
+    border: none;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 29px;
+      height: 2px;
+      background-color: fade-out(#283645, 0.7);
+    }
+
+    &::after {
+      top: 31px;
+      left: -3px;
+    }
+
+    &::before {
+      top: 11px;
+      left: -3px;
+    }
+
+    &--prev {
+      left: -12px;
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--next {
+      right: -12px;
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
 
 .reviews__toggles {
@@ -77,5 +167,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

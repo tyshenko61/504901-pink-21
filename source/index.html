@@ -10,7 +10,7 @@
 
   <body class="page__body">
     <header class="page__header page-header">
-      <!-- <div class="page-header__wrapper"> -->
+      <div class="page-header__wrapper">
         <div class="page-header__menu-logo">
           <a class="page-header__menu-logo-link">
             <svg class="page-header__menu-logo-image page-header__menu-logo-image--mobile" role="img" aria-label="Логотип Пинк" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@
             </ul>
           </div>
         </nav>
-      <!-- </div> -->
+      </div>
     </header>
     <main class="page__main">
       <h1 class="visually-hidden">
@@ -109,7 +109,7 @@
         <header class="advantages__header">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__offer">Нам есть, что вам предложить!</p>
+          <p class="advantages__offer">Нам есть, что вам<br>предложить!</p>
         </header>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
@@ -120,17 +120,25 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-              <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              <p class="advantages__item-description">Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью,
                 чтобы усилить&nbsp;эффект</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__item-title">Заводит новых друзей</h3>
+              <h3 class="advantages__item-title">Заводит новых&nbsp;друзей</h3>
               <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                 заводите новых</p>
             </li>
           </ul>
-          <div class="advantages__image">
-            <h2 class="visually-hidden">Телефон со смайлом</h2>
+          <div class="advantages__image-wrapper">
+            <div class="advantages__image--hidden advantages__image1">
+              <h2 class="visually-hidden">Телефон с черно-белым изображением</h2>
+            </div>
+            <div class="advantages__image--hidden advantages__image2">
+              <h2 class="visually-hidden">Телефон с розовым изображением</h2>
+            </div>
+            <div class="advantages__image">
+              <h2 class="visually-hidden">Телефон со смайлом</h2>
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +146,7 @@
         <div class="preview__wrapper">
           <h3 class="preview__title">Эффект на&nbsp;24&nbsp;часа!</h3>
           <p class="preview__text">Британские ученые провели исследования
-            и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+            и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
           <a href="#" class="preview__show-more" title="show-more">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -153,8 +161,8 @@
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__arrow reviews__arrow--prev" type="button"></button>
+            <button class="reviews__arrow reviews__arrow--next" type="button"></button>
           </div>
           <ul class="reviews__toggles slider__toggles">
             <li class="slider__toggles-item">
@@ -272,6 +280,9 @@
         <div class="feedback__map">
           <img class="feedback__map-image feedback__map-image--mobile" src="img/map.png" width="320" height="200" alt="Карта">
           <img class="feedback__map-image feedback__map-image--tablet" src="img/map-tablet.png" width="660" height="374" alt="Карта">
+          <img class="feedback__map-image feedback__map-image--desktop" src="img/map-desktop.png" width="1200" height="502" alt="Карта">
+
+
         </div>
       </section>
     </main>

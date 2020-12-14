@@ -31,7 +31,13 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 300px;
-   }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 300px;
+    font-size: 21px;
+  }
 }
 
 .promo-application__list {
@@ -42,6 +48,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 45px auto 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 72px auto 0 auto;
   }
 }
 
@@ -55,9 +65,12 @@
   margin: 15px auto 30px auto;
 
   @media (min-width: $tablet-width) {
-    font-weight: 300;
     font-size: 18px;
     width: 300px;
     margin: 27px auto 113px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 43px auto 113px auto;
   }
 }

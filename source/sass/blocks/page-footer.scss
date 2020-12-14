@@ -8,6 +8,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .page-footer__logo-link {
