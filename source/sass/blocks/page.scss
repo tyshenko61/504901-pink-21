@@ -12,15 +12,23 @@
   font-weight: 400;
   color: $dark-grey;
   background-color: $page-background;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .page__header {
-  background-color: $header-background;
+  background-color: transparent;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -110px;
+  }
 }
 
 .page__main {
@@ -28,14 +36,32 @@
 }
 
 .page__footer {
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 27px;
+  }
 }
 
 .page__copyright {
-  margin-top: 25px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -12px;
+  }
 }
 
 .page__social {
-  margin-top: 35px;
+  margin-top: 30px;
 }
