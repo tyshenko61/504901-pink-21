@@ -1,11 +1,15 @@
 .applications__item {
-  margin-top: 33px;
+  margin-top: 35px;
   margin-left: -5px;
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
     margin-left: 120px;
     margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 132px;
   }
 }
 
@@ -23,10 +27,11 @@
     border: 2px solid #e5e5e5;
     border-radius: 50%;
     left: -70px;
-    top: -8px;
+    top: -5px;
 
     @media (min-width: $tablet-width) {
       left: -61px;
+      top: -10px;
     }
   }
 }
@@ -40,11 +45,11 @@
     border-radius: 50%;
     background-color: #d22856;
     left: -57px;
-    top: 5px;
+    top: 7px;
 
     @media (min-width: $tablet-width) {
       left: -48px;
-      top: 5px;
+      top: 4px;
     }
   }
 }

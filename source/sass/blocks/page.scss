@@ -50,6 +50,18 @@
   }
 }
 
+.page__footer-form {
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}
+
 .page__copyright {
   margin-top: 27px;
 
