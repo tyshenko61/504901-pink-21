@@ -9,5 +9,10 @@
   @media (min-width: $desktop-width) {
     min-height: 110px;
     background-color: transparent;
+
+    &--current {
+      padding-bottom: 7px;
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }
