@@ -48,17 +48,18 @@
     padding-top: 60px;
     padding-bottom: 27px;
   }
-}
 
-.page__footer-form {
-  padding-top: 35px;
+  &--form {
+    padding-top: 35px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 11px;
-  }
+    @media (min-width: $tablet-width) {
+      padding-top: 11px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    @media (min-width: $desktop-width) {
+      padding-top: 14px;
+      padding-bottom: 70px;
+    }
   }
 }
 

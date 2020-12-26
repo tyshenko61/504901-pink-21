@@ -7,28 +7,31 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 92px 200px 0 200px;
+    width: 820px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 92px 0 0 0;
   }
 }
 
 .page-form__survey {
   @media (min-width: $tablet-width) {
+    width: 620px;
     display: grid;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content;
-    width: $tablet-width;
+    grid-template-columns: 620px;
+    grid-template-rows: repeat(6, min-content);
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
     box-sizing: border-box;
-    row-gap: 10px;
+    row-gap: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    grid-template-columns: 480px 480px;
-    grid-template-rows: min-content min-content min-content min-content min-content;
+    width: 940px;
+    grid-template-columns: repeat(2, 470px);
+    grid-template-rows: repeat(5, min-content);
     padding: 0;
     gap: 0;
+    box-sizing: border-box;
   }
 }
 
@@ -43,10 +46,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 30px;
   }
 
-  &--hidden {
+  &--toggle-visible {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -66,6 +68,14 @@
   text-transform: uppercase;
   color: #d22856;
   padding: 0 30px;
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .page-form__fieldset {
@@ -78,16 +88,8 @@
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
   }
-}
 
-.page-form__fieldset-info-fullname {
-  border: none;
-}
-
-.page-form__legend-contacts {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+  &--info-fullname {
+    border: none;
   }
 }

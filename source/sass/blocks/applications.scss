@@ -33,6 +33,11 @@
       left: -61px;
       top: -10px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -61px;
+      top: -6px;
+    }
   }
 }
 
@@ -50,6 +55,11 @@
     @media (min-width: $tablet-width) {
       left: -48px;
       top: 4px;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: -48px;
+      top: 5px;
     }
   }
 }
