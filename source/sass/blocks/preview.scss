@@ -15,8 +15,10 @@
   padding: 98px 0 40px 330px;
 
   @media (min-width: $desktop-width) {
-    width: 550px;
-    padding: 107px 20px 112px 500px;
+    width: 920px;
+    margin: 0 auto;
+    padding: 107px 20px 112px 360px;
+    box-sizing: border-box;
   }
 
   &::after {
@@ -32,8 +34,8 @@
       background-image: url("../img/timer-desktop.svg");
       width: 298px;
       height: 345px;
-      top: 15px;
-      left: 130px;
+      top: 13px;
+      left: -9px;
     }
   }
 }
@@ -69,6 +71,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    margin-top: 36px;
+    margin-top: 34px;
   }
 }

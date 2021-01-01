@@ -6,12 +6,38 @@
   color: #283645;
   margin: 0 20px;
   padding: 43px 10px 52px 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 90px 40px 80px 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 40px;
+  }
+}
+
+.gallery__title-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .gallery__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 33px;
+  }
 }
 
 .gallery__list-author {
@@ -20,6 +46,11 @@
   line-height: 24px;
   padding: 18px 0 0 17px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    order: 1;
+  }
 }
 
 .gallery__list-time {
@@ -35,6 +66,46 @@
   line-height: 24px;
   padding: 0 0 0 17px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    order: 2;
+  }
+}
+
+.gallery__list-text-panorama {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.gallery__panorama {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__panorama-link {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 36px;
+    background-image: url(../img/panorama-day.svg);
+    background-repeat: no-repeat;
+    right: 20px;
+    top: 0;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 56px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 55px;
+      right: 130px;
+    }
+  }
 }
 
 .gallery__list-item {
@@ -42,12 +113,55 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.gallery__list-wrapper {
+  margin: 20px 20px 0 20px;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .gallery__info {
   background-color: #f2f2f2;
   padding: 0;
   min-height: 121px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 155px;
+    padding: 22px 30px 0px 30px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 30px 0px 29px;
+  }
+}
+
+.gallery__info-panorama {
+  margin: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21px 30px 25px 30px;
+    min-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px 0 130px;
+    padding: 23px 30px 25px 28px;
+  }
 }
 
 .gallery__list-link {
@@ -58,6 +172,22 @@
 
 .gallery__list-likes {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin: auto 0 24px;
+    justify-content: space-between;
+
+  }
+}
+
+.gallery__list-likes-panorama {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-top: 2px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
 }
 
 .gallery__slogan {
@@ -68,9 +198,20 @@
   color: #283645;
   margin: 0 20px;
   padding: 18px 10px 44px 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 29px 10px 69px 10px;
+  }
 }
 
-.gallery__list-wrapper {
-  margin: 0 20px;
-  padding: 0;
+.gallery__panorama-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery__item-image {
+  display: block;
 }
