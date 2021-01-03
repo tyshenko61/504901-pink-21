@@ -110,11 +110,11 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -184,7 +184,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // width: 660px;
     height: 374px;
     margin: 0 auto 0 auto;
     background-image: url("../img/map-tablet.png");
@@ -196,7 +195,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 1200px;
     height: 520px;
     margin: 0 auto 0 auto;
     background-image: url("../img/map-desktop.png");

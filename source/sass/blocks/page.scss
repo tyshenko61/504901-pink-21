@@ -35,7 +35,6 @@
 }
 
 .page__main {
-  // overflow-x: hidden;
   overflow: hidden;
 }
 
@@ -64,6 +63,18 @@
       padding-top: 14px;
       padding-bottom: 70px;
     }
+  }
+}
+
+.page__footer-catalog {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
   }
 }
 

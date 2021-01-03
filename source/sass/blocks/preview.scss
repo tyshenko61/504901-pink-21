@@ -15,9 +15,9 @@
   padding: 98px 0 40px 330px;
 
   @media (min-width: $desktop-width) {
-    width: 920px;
+    width: 940px;
     margin: 0 auto;
-    padding: 107px 20px 112px 360px;
+    padding: 107px 20px 114px 370px;
     box-sizing: border-box;
   }
 
@@ -35,7 +35,7 @@
       width: 298px;
       height: 345px;
       top: 13px;
-      left: -9px;
+      left: 0;
     }
   }
 }
