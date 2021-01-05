@@ -120,7 +120,7 @@
   position: relative;
   display: block;
 
-  &--hidden {
+  &--slider-visible {
     display: none;
   }
 
@@ -129,7 +129,7 @@
     padding: 32px 0 0 0;
     box-sizing: border-box;
 
-    &--hidden {
+    &--slider-visible {
       display: block;
     }
 
@@ -142,6 +142,13 @@
       opacity: 0.1;
       top: 68px;
       left: -53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 410px;
+      left: -95px;
     }
   }
 }
