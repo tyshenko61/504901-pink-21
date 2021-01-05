@@ -22,3 +22,29 @@
     align-items: unset;
   }
 }
+
+.page-footer__logo-image {
+  display: none;
+  fill: #283645;
+
+  &--tablet {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 30%;
+  }
+}

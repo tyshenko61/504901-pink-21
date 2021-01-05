@@ -46,6 +46,34 @@
   }
 }
 
+.tools__button-icon {
+  fill: #283645;
+  opacity: 30%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &--active {
+    fill: #d22856;
+    opacity: 100%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: #d22856;
+    opacity: 100%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}
+
 .tools__button-contrast-svg {
   width: 32px;
   height: 32px;
@@ -58,18 +86,6 @@
   @media (min-width: $desktop-width) {
     width: 32px;
     height: 32px;
-  }
-}
-
-.tools__button-svg-opacity {
-  @media (min-width: $tablet-width) {
-    opacity: 1;
-  }
-}
-
-.tools__button-svg-fill {
-  @media (min-width: $tablet-width) {
-    fill: #d22856;
   }
 }
 
@@ -163,6 +179,10 @@
   border: 3px solid #d22856;
   box-sizing: border-box;
   border-radius: 50%;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .tools__toggle-crop {

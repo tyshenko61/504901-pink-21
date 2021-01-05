@@ -100,7 +100,6 @@
   fill: #ffffff;
   margin-left: 20px;
 
-
   &--mobile {
     display: block;
   }
@@ -120,6 +119,15 @@
       display: block;
       margin-left: 0;
     }
+  }
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 30%;
   }
 }
 
