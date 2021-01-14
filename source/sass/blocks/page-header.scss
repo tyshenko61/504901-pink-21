@@ -12,66 +12,16 @@
     background-color: $header-background;
     margin-bottom: 0;
     position: absolute;
-  }
-}
 
-.page-header__toggle {
-  position: absolute;
-  top: 23px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  margin: 0;
-  padding: 0;
+    .page-header__menu-logo {
+      min-height: 64px;
+      box-sizing: border-box;
+      background-color: transparent;
 
-  @media (min-width: $tablet-width) {
-    top: 43px;
-    right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 29px;
-    height: 3px;
-    right: -3px;
-    top: 10px;
-    transform: rotate(45deg);
-    background-color: #ffffff;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 29px;
-    height: 3px;
-    right: -3px;
-    top: 10px;
-    transform: rotate(-45deg);
-    background-color: #ffffff;
-  }
-
-  &:hover::before,
-  &:hover::after {
-    background-color: #d22856;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(#d22856, 30%);
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
+      @media (min-width: $tablet-width) {
+        min-height: 108px;
+      }
+    }
   }
 }
 
@@ -144,51 +94,5 @@
     width: 940px;
     display: grid;
     grid-template-columns: auto 620px;
-  }
-}
-
-.page-header--close .page-header__menu-logo {
-  min-height: 64px;
-  box-sizing: border-box;
-  background-color: transparent;
-
-  @media (min-width: $tablet-width) {
-    min-height: 108px;
-  }
-}
-
-.page-header--close .page-header__toggle {
-  width: 50px;
-  height: 24px;
-
-  &::before {
-    width: 50px;
-    height: 4px;
-    transform: rotate(0deg);
-    left: 0;
-    top: -3px;
-    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
-  }
-
-  &:hover::before {
-    background-color: #d22856;
-    box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
-  }
-
-  &:active::before {
-    background-color: fade(#d22856, 30%);
-    box-shadow: 0 10px 0 0 fade(#d22856, 30%), 0 20px 0 0 fade(#d22856, 30%);
-  }
-
-  &::after {
-    display: none;
-  }
-}
-
-.page-header--close .main-nav__list {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
   }
 }
