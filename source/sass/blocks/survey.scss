@@ -83,6 +83,14 @@
       padding: 15px 20px 14px 20px;
     }
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
+  }
 }
 
 .survey__info {
@@ -257,6 +265,19 @@
 
   @media (min-width: $desktop-width) {
     margin: 27px 0 27px 0;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade-out(#ffffff, 0.7);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
   }
 }
 

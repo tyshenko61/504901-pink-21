@@ -2,19 +2,32 @@
   background-repeat: no-repeat;
   min-height: 733px;
   background-color: #1d2631;
-  background-position: center top;
   background-image: url("../img/back-mobile.png");
+  background-position: 50% 0;
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/back-tablet.png");
-    background-size: cover;
+    background-image: url("../img/tablet-fon.jpg");
+    background-size: 1200px 729px;
     min-height: 724px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/back-desktop.png");
+    background-image: url("../img/desktop-fon.jpg");
     min-height: 853px;
+    background-size: 2560px 853px;
+  }
+
+  &--inner-page {
+    min-height: 236px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 435px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 394px;
+    }
   }
 }
 
@@ -184,17 +197,5 @@
     padding: 37px 0 16px 0;
     width: auto;
     height: auto;
-  }
-}
-
-.promo__inner-page {
-  min-height: 236px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 435px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 394px;
   }
 }

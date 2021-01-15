@@ -134,6 +134,16 @@
 .feedback__contacts-link {
   text-decoration: none;
   color: #d22856;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .feedback__contacts {
@@ -176,11 +186,9 @@
     content: "";
     width: 100%;
     height: 33px;
-    background-image: url("../img/triangle-white-footer-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
     z-index: 2;
+    background-color: white;
+    clip-path: polygon(0 0, 0 calc(100% - 33px), 50% 100%, 100% calc(100% - 33px), 100% 0);
   }
 
   @media (min-width: $tablet-width) {
@@ -191,6 +199,7 @@
     &::before {
       height: 69px;
       width: 100%;
+      clip-path: polygon(0 0, 0 calc(100% - 69px), 50% 100%, 100% calc(100% - 69px), 100% 0);
     }
   }
 
@@ -202,6 +211,7 @@
     &::before {
       height: 123px;
       width: 100%;
+      clip-path: polygon(0 0, 0 calc(100% - 103px), 50% 100%, 100% calc(100% - 103px), 100% 0);
     }
   }
 }
