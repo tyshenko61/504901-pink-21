@@ -38,6 +38,15 @@
     width: 300px;
     font-size: 21px;
   }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .promo-application__list {
@@ -67,10 +76,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     width: 300px;
-    margin: 27px auto 113px auto;
+    margin: 27px auto 0 auto;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 43px auto 113px auto;
+    margin: 43px auto 109px auto;
   }
 }

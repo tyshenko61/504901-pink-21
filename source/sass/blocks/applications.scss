@@ -39,6 +39,14 @@
       top: -6px;
     }
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
 }
 
 .applications__radio {

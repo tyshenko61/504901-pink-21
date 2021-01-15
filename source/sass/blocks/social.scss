@@ -16,3 +16,16 @@
     margin-right: 0;
   }
 }
+
+.social__link-ico {
+  color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.1);
+    opacity: 30%;
+  }
+}

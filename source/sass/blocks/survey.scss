@@ -3,7 +3,7 @@
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 16px 0 7px 23px;
+  padding: 20px 0 5px 23px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -83,10 +83,18 @@
       padding: 15px 20px 14px 20px;
     }
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
+  }
 }
 
 .survey__info {
-  margin: 16px 20px 42px 20px;
+  margin: 15px 20px 40px 20px;
 
   &--fullname {
     @media (min-width: $tablet-width) {
@@ -103,7 +111,7 @@
   &--contacts {
     @media (min-width: $tablet-width) {
       grid-row: 3/4;
-      margin: 54px 0 0 0;
+      margin: 50px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -224,7 +232,7 @@
 }
 
 .survey__emotion {
-  margin: 37px 20px 37px 20px;
+  margin: 35px 20px 37px 20px;
 
   @media (min-width: $tablet-width) {
     grid-row: 5/6;
@@ -251,12 +259,25 @@
   margin: 12px 20px 20px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 24px 0 20px 0;
+    margin: 25px 0 25px 0;
     width: 300px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 27px 0 27px 0;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade-out(#ffffff, 0.7);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
   }
 }
 

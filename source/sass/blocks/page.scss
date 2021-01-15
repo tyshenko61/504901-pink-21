@@ -12,10 +12,7 @@
   font-weight: 400;
   color: $dark-grey;
   background-color: $page-background;
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
+  width: 100%;
 }
 
 .page__header {
@@ -23,8 +20,14 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin: 0;
   padding: 0;
+  margin-bottom: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -108px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: -110px;
@@ -32,7 +35,7 @@
 }
 
 .page__main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .page__footer {
@@ -45,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 60px;
+    padding-top: 42px;
     padding-bottom: 27px;
   }
 
@@ -60,6 +63,18 @@
       padding-top: 14px;
       padding-bottom: 70px;
     }
+  }
+}
+
+.page__footer-catalog {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
   }
 }
 
