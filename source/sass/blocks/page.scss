@@ -93,3 +93,16 @@
 .page__social {
   margin-top: 30px;
 }
+
+.page__modal {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
