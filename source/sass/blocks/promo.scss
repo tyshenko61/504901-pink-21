@@ -1,6 +1,6 @@
 .promo {
   background-repeat: no-repeat;
-  min-height: 733px;
+  min-height: 734px;
   background-color: #1d2631;
   background-image: url("../img/back-mobile.png");
   background-position: 50% 0;
@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/tablet-fon.jpg");
     background-size: 1200px 729px;
-    min-height: 724px;
+    min-height: 726px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,10 +19,10 @@
   }
 
   &--inner-page {
-    min-height: 236px;
+    min-height: 238px;
 
     @media (min-width: $tablet-width) {
-      min-height: 435px;
+      min-height: 438px;
     }
 
     @media (min-width: $desktop-width) {
@@ -102,7 +102,7 @@
     height: 286px;
     background-image: url("../img/phone.png");
     background-repeat: no-repeat;
-    top: 175px;
+    top: 176px;
     left: -20px;
     box-sizing: border-box;
 
@@ -110,7 +110,7 @@
       width: 660px;
       height: 545px;
       background-image: url("../img/phone-tablet.png");
-      top: 72px;
+      top: 75px;
       left: -20px;
     }
 
@@ -131,7 +131,7 @@
     background-image: url("../img/screen.png");
     background-size: cover;
     left: 85px;
-    top: 207px;
+    top: 208px;
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
@@ -139,7 +139,7 @@
       height: 346px;
       background-image: url("../img/screen-tablet.png");
       left: 352px;
-      top: 125px;
+      top: 130px;
     }
 
     @media (min-width: $desktop-width) {

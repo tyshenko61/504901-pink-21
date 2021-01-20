@@ -79,9 +79,14 @@
 }
 
 .page__copyright {
-  margin-top: 27px;
+  margin-top: 28px;
+
+  &--inner {
+    margin-top: 33px;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-top: 27px;
     margin-left: 12px;
   }
 

@@ -1,5 +1,13 @@
 .modal {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateY(calc(50vh - 50%));
+  z-index: 10;
 
   &--open {
     display: block;
@@ -147,9 +155,35 @@
     width: 300px;
   }
 
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
   &--success {
     @media (min-width: $desktop-width) {
       width: 460px;
+    }
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
     }
   }
 }

@@ -5,12 +5,12 @@
   text-align: center;
   color: #283645;
   margin: 0 20px;
-  padding: 43px 10px 52px 10px;
+  padding: 45px 10px 50px 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
-    padding: 90px 40px 80px 40px;
+    padding: 91px 40px 77px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 10px 0;
+    padding: 51px 0 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -210,7 +210,7 @@
   text-align: center;
   color: #283645;
   margin: 0 20px;
-  padding: 21px 10px 44px 10px;
+  padding: 21px 10px 43px 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

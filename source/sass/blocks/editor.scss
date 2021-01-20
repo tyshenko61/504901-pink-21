@@ -13,14 +13,17 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     padding-top: 38px;
     padding-bottom: 31px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
     width: 940px;
     margin: 0 auto;
     padding-top: 35px;
@@ -28,7 +31,12 @@
 }
 
 .editor__photo-wrapper {
-  padding: 20px 0;
+  padding: 18px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 20px 60px 25px 80px;
@@ -37,17 +45,18 @@
 
 .editor__tools {
   margin: 22px 0 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 6px 0 20px 21px;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: start;
+    margin: 5px 0 20px 22px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
   }
 }
 
@@ -62,11 +71,11 @@
   margin-top: 37px;
 
   @media (min-width: $tablet-width) {
-    margin: 62px 0 0 26px;
+    margin: 62px 0 0 15px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 142px 0 0 30px;
+    margin: 142px 0 0 10px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
