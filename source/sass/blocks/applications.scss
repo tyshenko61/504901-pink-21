@@ -1,5 +1,5 @@
 .applications__item {
-  margin-top: 35px;
+  margin-top: 33px;
   margin-left: -5px;
 
   @media (min-width: $tablet-width) {
@@ -26,12 +26,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
     left: -70px;
     top: -5px;
 
     @media (min-width: $tablet-width) {
-      left: -61px;
-      top: -10px;
+      left: -62px;
+      top: -8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -53,21 +55,33 @@
   &:checked + .applications__label::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 37px;
+    height: 37px;
+    left: -70px;
+    top: -5px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
     border-radius: 50%;
-    background-color: #d22856;
-    left: -57px;
-    top: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ellipse-small.svg");
 
     @media (min-width: $tablet-width) {
-      left: -48px;
-      top: 4px;
+      left: -62px;
+      top: -8px;
     }
 
-    @media (min-width: $tablet-width) {
-      left: -48px;
-      top: 5px;
+    @media (min-width: $desktop-width) {
+      left: -61px;
+      top: -6px;
     }
+  }
+
+  &:checked + .applications__label:hover::after {
+    border-color: #283645;
+  }
+
+  &:checked + .applications__label:active::after {
+    border-color: #d22856;
   }
 }

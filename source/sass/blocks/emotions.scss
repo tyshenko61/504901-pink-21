@@ -3,25 +3,23 @@
   border-radius: 3px;
   margin-top: 16px;
   min-width: 272px;
-  min-height: 193px;
+  min-height: 202px;
   resize: none;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  padding: 17px 20px 18px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 36px 59px 51px 57px;
-    min-height: 185px;
+    min-height: 195px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 35px 58px 45px 58px;
-    min-height: 120px;
-  }
-
-  &::placeholder {
-    padding-top: 12px;
-    padding-left: 18px;
+    margin: 34px 58px 45px 58px;
+    min-height: 127px;
+    padding: 14px 20px 18px;
   }
 }

@@ -48,7 +48,6 @@
 }
 
 .price__cell {
-  position: relative;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 
@@ -125,6 +124,39 @@
     font-size: 18px;
     margin-top: 16px;
     margin-bottom: 1px;
+  }
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: -13px;
+      left: -1px;
+      background-image: url("../img/hit.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        height: 61px;
+        width: 61px;
+        background-image: url("../img/hit-tablet.svg");
+        top: -13px;
+        left: -1px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 74px;
+        height: 74px;
+        background-image: url("../img/hit.svg");
+        top: -17px;
+        left: -1px;
+      }
+    }
   }
 }
 
