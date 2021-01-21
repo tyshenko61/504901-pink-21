@@ -6,16 +6,29 @@
   background-position: 50% 0;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/tablet-fon.jpg");
     background-size: 1200px 729px;
     min-height: 726px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-fon@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/desktop-fon.jpg");
     min-height: 853px;
     background-size: 2560px 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-fon@2x.jpg");
+      background-size: 2400px 1722px;
+    }
   }
 
   &--inner-page {
@@ -106,12 +119,22 @@
     left: -20px;
     box-sizing: border-box;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone@2x.png");
+      background-size: 320px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 660px;
       height: 545px;
       background-image: url("../img/phone-tablet.png");
       top: 75px;
       left: -20px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-tablet@2x.png");
+        background-size: 660px;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -120,6 +143,11 @@
       background-image: url("../img/phone-desktop.png");
       top: 84px;
       left: 16px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-desktop@2x.png");
+        background-size: 1050px;
+      }
     }
   }
 
@@ -134,12 +162,22 @@
     top: 208px;
     box-sizing: border-box;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen@2x.png");
+      background-size: 111px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 195px;
       height: 346px;
       background-image: url("../img/screen-tablet.png");
       left: 352px;
       top: 130px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/screen-tablet@2x.png");
+        background-size: 195px;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -148,6 +186,11 @@
       background-image: url("../img/screen-desktop.png");
       top: 148px;
       left: 587px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/screen-desktop@2x.png");
+        background-size: 460px;
+      }
     }
   }
 }
