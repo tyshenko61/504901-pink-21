@@ -46,9 +46,9 @@ exports.html = html;
 //Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/menu.js")
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
-    .pipe(rename("menu.min.js"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -83,7 +83,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/*.svg")
+  return gulp.src("source/img/sprite/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -141,7 +141,7 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/menu.js", gulp.series(scripts));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
