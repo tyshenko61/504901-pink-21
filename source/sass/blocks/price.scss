@@ -15,6 +15,10 @@
   }
 }
 
+.price__data {
+  position: relative;
+}
+
 .price__wrapper {
   padding-top: 116px;
   padding-bottom: 10px;
@@ -50,6 +54,7 @@
 .price__cell {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
