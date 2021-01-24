@@ -8,12 +8,13 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 45px;
+    display: inline;
     align-items: flex-start;
     background-color: transparent;
     box-sizing: border-box;
 
     &--current {
-      padding-bottom: 11px;
+      padding-bottom: 7px;
       border-bottom: 2px solid #ffffff;
     }
   }

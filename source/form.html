@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк - Заявка на конкурс</title>
+    <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -41,7 +42,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="main-nav__link site-list__item--current" href="form.html">
+                <a class="main-nav__link site-list__item site-list__item--current" href="form.html">
                   Конкурс
                 </a>
               </li>
@@ -80,15 +81,15 @@
                 <li class="survey__info-list-item survey__info-list-item--fullname">
                   <label class="survey__label" for="surname">Фамилия:</label>
                   <input class="survey__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *"
-                    required>
+                    required aria-label="Фамилия">
                 </li>
                 <li class="survey__info-list-item survey__info-list-item--fullname">
                   <label class="survey__label" for="name">Имя:</label>
-                  <input class="survey__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+                  <input class="survey__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required aria-label="Имя">
                 </li>
                 <li class="survey__info-list-item survey__info-list-item--fullname">
                   <label class="survey__label" for="patronymic">Отчество:</label>
-                  <input class="survey__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                  <input class="survey__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" aria-label="Отчество">
                 </li>
               </ul>
             </fieldset>
@@ -101,30 +102,30 @@
               <ul class="survey__list survey__list--achievements">
                 <li class="achievements__item">
                   <input class="achievements__checkbox visually-hidden" type="checkbox" name="shark" id="shark"
-                    checked>
+                    checked aria-label="Сделал селфи с акулой">
                   <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
                 </li>
                 <li class="achievements__item">
                   <input class="achievements__checkbox visually-hidden" type="checkbox" name="beach" id="beach"
-                    checked>
+                    checked aria-label="Обгорел на пляже">
                   <label class="achievements__label" for="beach">Обгорел на пляже</label>
                 </li>
                 <li class="achievements__item">
-                  <input class="achievements__checkbox visually-hidden" type="checkbox" name="norris" id="norris">
+                  <input class="achievements__checkbox visually-hidden" type="checkbox" name="norris" id="norris" aria-label="Видел Чака Норриса">
                   <label class="achievements__label" for="norris">Видел Чака Норриса</label>
                 </li>
                 <li class="achievements__item">
                   <input class="achievements__checkbox visually-hidden" type="checkbox" name="souvenirs"
-                    id="souvenirs">
+                    id="souvenirs" aria-label="Накупил сувениров">
                   <label class="achievements__label" for="souvenirs">Накупил сувениров</label>
                 </li>
                 <li class="achievements__item">
                   <input class="achievements__checkbox visually-hidden" type="checkbox" name="tower" id="tower"
-                    checked>
+                    checked aria-label="Удержал башню">
                   <label class="achievements__label" for="tower">Удержал башню</label>
                 </li>
                 <li class="achievements__item">
-                  <input class="achievements__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+                  <input class="achievements__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" aria-label="Разгромил отель">
                   <label class="achievements__label " for="hotel">Разгромил отель</label>
                 </li>
               </ul>
@@ -138,11 +139,11 @@
               <ul class="survey__info-list survey__info-list--contacts">
                 <li class="survey__info-list-item">
                   <label class="survey__label survey__label-contacts survey__label-contacts--phone" for="phone">Номер телефона</label>
-                  <input class="survey__input survey__input--contacts" type="tel" id="phone" name="phone" pattern="+7[0-9]{10}" placeholder="Номер, пожалуйста">
+                  <input class="survey__input survey__input--contacts" type="tel" id="phone" name="phone" aaria-label="Номер телефона" pattern="+7[0-9]{10}" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="survey__info-list-item">
                   <label class="survey__label survey__label-contacts survey__label-contacts--email" for="email">Адрес почты</label>
-                  <input class="survey__input survey__input--contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                  <input class="survey__input survey__input--contacts" type="email" id="email" name="email" aria-label="Адрес почты" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -155,17 +156,17 @@
               <ul class="survey__list survey__list--applications">
                 <li class="applications__item">
                   <input class="applications__radio visually-hidden" type="radio" name="application" id="ios"
-                    value="ios" checked>
+                    value="ios" checked aria-label="ios">
                   <label class="applications__label" for="ios">Pink для iOS</label>
                 </li>
                 <li class="applications__item">
                   <input class="applications__radio visually-hidden" type="radio" name="application" id="android"
-                    value="android">
+                    value="android" aria-label="android">
                   <label class="applications__label" for="android">Pink на Android</label>
                 </li>
                 <li class="applications__item">
                   <input class="applications__radio visually-hidden" type="radio" name="application" id="windows"
-                    value="windows">
+                    value="windows" aria-label="windows">
                   <label class="applications__label" for="windows">Windows Phone</label>
                 </li>
               </ul>
@@ -176,11 +177,11 @@
               <legend class="page-form__legend">Опишите свои эмоции</legend>
               <label class="visually-hidden" for="emotions">Текст комментария:</label>
               <textarea class="emotions__text-field" id="emotions" name="emotions"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле где вы можете описать свои эмоции"></textarea>
             </fieldset>
           </div>
           <div class="survey__form-footer">
-            <button class="survey__form-button" type="submit">Отправить форму</button>
+            <button class="survey__form-button" type="submit" aria-label="отправить форму">Отправить форму</button>
             <p class="survey__footer"><span class="survey__designation" >
               *</span> — Обязательные
               <span class="survey__footer survey__footer--toggle-visual"> для заполнения </span>
@@ -224,21 +225,21 @@
         <div class="page__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/">
+              <a class="social__link social__link--twitter" href="https://twitter.com/" title="twitter" aria-label="twitter">
                 <svg class="social__link-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#ico-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://facebook.com/">
+              <a class="social__link social__link--facebook" href="https://facebook.com/" title="facebook" aria-label="facebook">
                 <svg class="social__link-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#ico-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://youtube.com/">
+              <a class="social__link social__link--youtube" href="https://youtube.com/" title="youtube" aria-label="youtube">
                 <svg class="social__link-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#ico-youtube"></use>
                 </svg>
@@ -248,7 +249,7 @@
         </div>
         <div class="page__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="copyright" aria-label="Html Academy link">
             <svg class="copyright__ico" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#ico-copyright"></use>
             </svg>

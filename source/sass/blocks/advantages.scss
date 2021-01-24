@@ -1,6 +1,6 @@
 .advantages {
   background-image: url("../img/grey-background.png");
-  background-position: 0 120px;
+  background-position: 0 122px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -60,18 +60,18 @@
 .advantages__list {
   list-style: none;
   margin: 0;
-  padding: 108px 0 0 0;
+  padding: 110px 0 0 0;
 
   @media (min-width: $tablet-width) {
     grid-area: advantages-list;
-    padding: 84px 0 0 0;
+    padding: 100px 0 0 0;
   }
 
 
   @media (min-width: $desktop-width) {
     order: 1;
     display: flex;
-    margin: -33px auto 0 auto;
+    margin: -47px auto 0 auto;
   }
 }
 
@@ -82,7 +82,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    margin: 5px 0 35px 0;
+    margin: 5px 0 37px 0;
     width: 310px;
   }
 
@@ -133,7 +133,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    padding: 14px 26px 0 26px;
+    padding: 13px 26px 0;
   }
 }
 
@@ -163,9 +163,9 @@
   @media (min-width: $tablet-width) {
     grid-area: advantages-image;
     background-color: transparent;
-    height: 497px;
+    height: 516px;
     background-image: url("../img/iphone-3-tablet.png");
-    background-position: 15px 16px;
+    background-position: 15px 34px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-3-tablet@2x.png");
@@ -183,11 +183,11 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    height: 340px;
+    height: 357px;
     margin: 0;
     width: 300px;
     background-image: url("../img/iphone-3-desktop.png");
-    background-position: 0 38px;
+    background-position: 0 57px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -200,10 +200,10 @@
 .advantages__image1 {
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    height: 340px;
+    height: 357px;
     width: 300px;
     background-image: url("../img/iphone-1-desktop.png");
-    background-position: 0 38px;
+    background-position: 0 57px;
     background-repeat: no-repeat;
     margin-right: 20px;
 
@@ -217,10 +217,10 @@
 .advantages__image2 {
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    height: 340px;
+    height: 357px;
     width: 300px;
     background-image: url("../img/iphone-2-desktop.png");
-    background-position: 0 38px;
+    background-position: 0 57px;
     background-repeat: no-repeat;
     margin-right: 20px;
   }
@@ -239,7 +239,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "advantages-image advantages-list";
-    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
